@@ -29,7 +29,7 @@ function App() {
 
     // Send data to the server
     try {
-      const response = await fetch('https://get-data-4a03ad1a15ff.herokuapp.com/', {
+      const response = await fetch('https://get-data-4a03ad1a15ff.herokuapp.com/get-data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

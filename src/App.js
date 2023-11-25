@@ -21,13 +21,12 @@ function App() {
     event.preventDefault();
     const { name, email, blockNumberStart, blockNumberEnd } = formData;
 
-    // Validate input fields
     if (!name || !email || !blockNumberStart || !blockNumberEnd) {
       alert('Please fill out all fields.');
       return;
     }
 
-    // Send data to the server
+
     try {
       const response = await fetch('https://get-data-4a03ad1a15ff.herokuapp.com/get-data', {
         method: 'POST',
